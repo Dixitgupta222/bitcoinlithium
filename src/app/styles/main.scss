@@ -1,0 +1,88 @@
+// Import variables and mixins
+@import 'variables';
+@import 'mixins';
+
+// Import Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Custom styles
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-primary;
+  background-color: $background-light;
+}
+
+// Header styles
+.navbar {
+  padding: 1rem 0;
+  background-color: $background-light;
+  box-shadow: 0 1px 3px rgba($dark, 0.1);
+  
+  .navbar-brand {
+    font-weight: 700;
+    color: $primary;
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    color: $text-primary;
+    
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    
+    &:hover {
+      background-color: darken($primary, 10%);
+      border-color: darken($primary, 10%);
+    }
+  }
+}
+
+// Footer styles
+footer {
+  background-color: $background-dark;
+  color: $light;
+  padding: 4rem 0 2rem;
+  
+  h5 {
+    color: $light;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .text-muted {
+    color: rgba($light, 0.7) !important;
+  }
+  
+  a {
+    color: rgba($light, 0.7);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    
+    &:hover {
+      color: $light;
+    }
+  }
+  
+  .bi {
+    font-size: 1.5rem;
+    transition: transform 0.2s ease;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  hr {
+    border-color: rgba($light, 0.1);
+    margin: 2rem 0;
+  }
+} 
