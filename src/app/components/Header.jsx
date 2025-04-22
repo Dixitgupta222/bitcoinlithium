@@ -11,10 +11,10 @@ export default function Header() {
           <Link href="/" className="navbar-brand">
             Nexchain
           </Link>
-          <button 
-            className="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
@@ -23,27 +23,27 @@ export default function Header() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav me-auto">
+            <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <Link href="/about" className="nav-link">
+                <Link href="#about" className="nav-link">
                   About
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/developer" className="nav-link">
+                <Link href="#developer" className="nav-link">
                   Developer Hub
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/contact" className="nav-link">
+                <Link href="#contact" className="nav-link">
                   Contact
                 </Link>
               </li>
             </ul>
-            <button className="btn btn-primary">
-              Presale is Live
-            </button>
           </div>
+          <button className="btn btn-primary">
+            Presale is Live
+          </button>
         </div>
       </nav>
     </header>
