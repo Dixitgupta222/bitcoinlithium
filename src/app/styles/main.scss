@@ -5,6 +5,9 @@
 // Import Bootstrap
 @import "bootstrap/scss/bootstrap";
 
+// Import sections
+@import "sections/intro";
+
 // Custom styles
 body {
   font-family: $font-family-base;
@@ -41,19 +44,8 @@ body {
       padding: 10px 20px;
       border-radius: 50px;
       &:hover {
-        color: $light;
-        background-color: $dark;
+        color: $primary;
       }
-    }
-  }
-
-  .btn-primary {
-    background-color: $primary;
-    border-color: $primary;
-
-    &:hover {
-      background-color: darken($primary, 10%);
-      border-color: darken($primary, 10%);
     }
   }
 }
@@ -84,17 +76,39 @@ footer {
     }
   }
 
-  .bi {
-    font-size: 1.5rem;
-    transition: transform 0.2s ease;
-
-    &:hover {
-      transform: translateY(-2px);
-    }
-  }
-
   hr {
     border-color: rgba($light, 0.1);
     margin: 2rem 0;
+  }
+}
+
+.btn_primary {
+  background-color: $dark;
+  color: $light;
+  border-radius: 50px;
+  padding: 10px 15px;
+  text-decoration: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  &::after {
+    content: "";
+    background-color: #fff;
+    display: inline-block;
+    background-image: url(/img/b-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 12px;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+  }
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
   }
 }

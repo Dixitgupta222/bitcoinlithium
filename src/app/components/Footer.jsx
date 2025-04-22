@@ -52,11 +52,11 @@ export default function Footer() {
           <div className="col-md-3">
             <h5 className="mb-3">Stay Connected</h5>
             <div className="d-flex gap-3">
-              <a href="#" className="text-muted">
-                <i className="bi bi-twitter"></i>
+              <a href="#" className="text-muted text-decoration-none">
+                Twitter
               </a>
-              <a href="#" className="text-muted">
-                <i className="bi bi-github"></i>
+              <a href="#" className="text-muted text-decoration-none">
+                GitHub
               </a>
             </div>
           </div>

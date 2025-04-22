@@ -2,14 +2,14 @@
 
 import React from 'react'
 import Link from 'next/link'
-
+import Image from 'next/image'
 export default function Header() {
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-light">
-        <div className="container-fluid">
+        <div className="container">
           <Link href="/" className="navbar-brand">
-            Nexchain
+            <Image src="/img/logo.svg" alt="Nexchain" width={100} height={45} />
           </Link>
           <button
             className="navbar-toggler"
@@ -41,9 +41,9 @@ export default function Header() {
               </li>
             </ul>
           </div>
-          <button className="btn btn-primary">
-            Presale is Live
-          </button>
+          <Link href="#presale" className="btn_primary">
+            Join Presale
+          </Link>
         </div>
       </nav>
     </header>
