@@ -29,25 +29,12 @@ export default function Intro() {
               advanced technology and the decentralization security.
             </p>
             <div className="intro-actions">
-              <Link href="#presale" className="btn-presale">
-                Join the Nexchain presale before the next round begins!
+              <Link href="#presale" className="btn_primary">
+                Join Presale
               </Link>
-            </div>
-            <div className="intro-stats mt-5">
-              <div className="row g-4">
-                <div className="col-6 col-md-4">
-                  <div className="stat-item">
-                    <div className="stat-value">Round 11</div>
-                    <div className="stat-label">NEX - 0$</div>
-                  </div>
-                </div>
-                <div className="col-6 col-md-4">
-                  <div className="stat-item">
-                    <div className="stat-value">USD Raised</div>
-                    <div className="stat-label">00.00 USD/ 50000 USD</div>
-                  </div>
-                </div>
-              </div>
+              <Link href="#presale" className="btn_primary light">
+                Whitepaper
+              </Link>
             </div>
           </div>
         </div>

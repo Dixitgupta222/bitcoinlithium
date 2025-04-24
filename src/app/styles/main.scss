@@ -107,6 +107,14 @@ footer {
     height: 32px;
     margin-left: 10px;
   }
+  &.light{
+    background-color: $light;
+    color: $dark;
+    &::after{
+      background-color: $dark;
+      background-image: url(/img/w-arrow.svg);
+    }
+  }
   &:hover {
     transform: scale(1.01);
     box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
