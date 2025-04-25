@@ -83,6 +83,35 @@
     }
   }
 
+  .investor-content {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    display: grid;
+    .inv-dev_block {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: 24px;
+      padding: 12px;
+      transition: .3s;
+      box-shadow: 0 0 8px 0 rgba($dark, 0.2);
+      &:hover {
+        transform: translateY(-5px);
+      }
+      img {
+        width: 100%;
+        margin-bottom: 12px;
+        height: auto;
+        object-fit: contain;
+      }
+      .inv-dev_block-text {
+        h3 {
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
   @media (max-width: 768px) {
     .section-header {
       .section-title {

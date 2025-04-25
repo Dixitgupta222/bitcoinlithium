@@ -1,65 +1,73 @@
-
 // Partners Data
 export const getPartnersData = () => ({
   investors: [
-    { name: "Google Cloud", image: "/img/partners/googlecloud.webp" },
-    { name: "OpenAI", image: "/img/partners/openai.webp" },
-    { name: "Amazon Web Services", image: "/img/partners/amazon.webp" },
-    { name: "Dalle", image: "/img/partners/dalle.webp" },
-    { name: "Crypto.com", image: "/img/partners/cryptocom.webp" },
-    { name: "CoinMarketCap", image: "/img/partners/CoinMarketCap.svg" },
-    { name: "Visa", image: "/img/partners/visa.webp" },
-    { name: "Nvidia", image: "/img/partners/nvidia.webp" },
-    { name: "1inch", image: "/img/partners/1inch.webp" },
-    { name: "Ledger", image: "/img/partners/ledger.webp" },
+    {
+      name: "High transaction speed 400 000 TPS",
+      image: "/img/investers/tps.webp",
+      description:
+        "AI optimization and same time processing enable instant transfers without overloading the Nexchain.ai network",
+    },
+    {
+      name: "Hybrid consensus for reliability and stability",
+      image: "/img/investers/hybrid.webp",
+      description:
+        "Proof-of-Stake (PoS) + AI-driven algorithms adapt the network in real time, enhancing both security and performance",
+    },
+    {
+      name: "Interoperability: connecting with other blockchains",
+      image: "/img/investers/connecting.webp",
+      description:
+        "Cross-chain bridges and integrations ensure seamless interaction with other crypto ecosystems.",
+    },
+    {
+      name: "Scalable architecture for future growth",
+      image: "/img/investers/arch.webp",
+      description:
+        "By leveraging sharding and a DAG structure, Nexchain reduces network load and enables the processing of thousands of NEX coin transactions at once.",
+    },
+    {
+      name: "Low fees – just $0.001",
+      image: "/img/investers/low.webp",
+      description:
+        "Resource-efficient operations reduce costs, making the Nexchain presale blockchain accessible to everyone.",
+    },
+    {
+      name: "Smart contracts 2.0",
+      image: "/img/investers/smart.webp",
+      description:
+        "AI-smart contracts can self-optimize and make decisions, opening up new opportunities for NEX crypto decentralized apps.",
+    },
+    {
+      name: "Energy efficiency and sustainable growth",
+      image: "/img/investers/energy.webp",
+      description:
+        "Innovative algorithms reduce power consumption, making Nexchain an eco-friendly blockchain of the future.",
+    },
   ],
   developers: [
-    { name: "Dev Partner 1", image: "/img/partners/dev1.svg" },
-    { name: "Dev Partner 2", image: "/img/partners/dev2.svg" },
-    { name: "Dev Partner 3", image: "/img/partners/dev3.svg" },
-    { name: "Dev Partner 4", image: "/img/partners/dev4.svg" },
-    { name: "Dev Partner 5", image: "/img/partners/dev5.svg" },
-  ]
+    {
+      name: "Complete AI instrastructure: SDK and API",
+      image: "/img/developers/complete.webp",
+      description:
+        "Tools for flexible integration of AI models into dApps and smart contracts empower developers abilities.",
+    },
+    {
+      name: "User-friendly tools for development and testing",
+      image: "/img/developers/user.webp",
+      description:
+        "Built-in debugging environments, as well as performance and security analysis, speed up the creation and deployment of Nexchain AI apps.",
+    },
+    {
+      name: "Customizable AI modules",
+      image: "/img/developers/customizable.webp",
+      description:
+        "Upload, train, and implement your own AI solutions, tailoring them to the needs of your project.",
+    },
+    {
+      name: "Cross-chain integration",
+      image: "/img/developers/cross.webp",
+      description:
+        "Create blockchain-networks compatible apps and expand your audience reach",
+    },
+  ],
 });
-
-// Nexchain Future Section Data
-export const getNexchainFutureData = () => ({
-  title: "Nexchain is the future on blockchains",
-  subtitle: "AI powered",
-  gridItems: [
-    {
-      title: "Decentralized AI",
-      description: "Powering the future of blockchain with AI",
-      icon: "/img/icons/ai.svg"
-    },
-    {
-      title: "Smart Contracts",
-      description: "Advanced smart contract capabilities",
-      icon: "/img/icons/contract.svg"
-    },
-    {
-      title: "Security",
-      description: "Enterprise-grade security features",
-      icon: "/img/icons/security.svg"
-    },
-    {
-      title: "Scalability",
-      description: "High throughput and low latency",
-      icon: "/img/icons/scale.svg"
-    }
-  ]
-});
-
-// // Section Headers Data
-// export const getSectionHeaders = () => ({
-//   partners: {
-//     subtitle: "AI-Powered Network",
-//     title: "Our Trusted Partners",
-//     icon: "/img/icons/ai.svg"
-//   },
-//   nexchain: {
-//     subtitle: "AI powered",
-//     title: "Nexchain is the future on blockchains",
-//     icon: "/img/icons/blockchain.svg"
-//   }
-// }); 

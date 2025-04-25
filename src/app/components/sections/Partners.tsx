@@ -4,9 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { getPartnersData } from "@/app/data/data";
 export default function Partners() {
-  console.log(getPartnersData());
   const [activeButton, setActiveButton] = useState("investor"); // 'investor' or 'developer'
-
   const partners = [
     { name: "Google Cloud", image: "/img/partners/googlecloud.webp" },
     { name: "OpenAI", image: "/img/partners/openai.webp" },
@@ -27,7 +25,7 @@ export default function Partners() {
   return (
     <>
       <section className="partners-section">
-        <div className="container-fluid">
+        <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="section-header text-center">
@@ -36,7 +34,7 @@ export default function Partners() {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-lg-10">
+            <div className="col-lg-12">
               <div className="partners-grid">
                 {partners.map((partner, index) => (
                   <div key={index} className="partner-item">
@@ -54,8 +52,8 @@ export default function Partners() {
           </div>
         </div>
       </section>
-      <section className="partners-section">
-        <div className="container-fluid">
+      <section className="partners-section investor-section">
+        <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="section-header sec-header">
@@ -89,11 +87,37 @@ export default function Partners() {
               <div className="content-wrapper mt-4">
                 {activeButton === "investor" ? (
                   <div className="investor-content">
-                    Investor content here
+                    {getPartnersData().investors.map((investor, index) => (
+                      <div className="inv-dev_block" key={index}>
+                        <Image
+                          src={investor.image}
+                          alt={investor.name}
+                          width={100}
+                          height={150}
+                        />
+                        <div className="inv-dev_block-text">
+                          <h3>{investor.name}</h3>
+                          <p>{investor.description}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 ) : (
-                  <div className="developer-content">
-                    Developer content here
+                  <div className="developer-content investor-content">
+                    {getPartnersData().developers.map((investor, index) => (
+                      <div className="inv-dev_block" key={index}>
+                        <Image
+                          src={investor.image}
+                          alt={investor.name}
+                          width={100}
+                          height={150}
+                        />
+                        <div className="inv-dev_block-text">
+                          <h3>{investor.name}</h3>
+                          <p>{investor.description}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 )}
               </div>
