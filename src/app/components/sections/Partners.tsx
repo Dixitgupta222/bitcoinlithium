@@ -25,7 +25,7 @@ export default function Partners() {
   return (
     <>
       <section className="partners-section">
-        <div className="container">
+        <div className="container-lg">
           <div className="row">
             <div className="col-12">
               <div className="section-header text-center">
@@ -53,7 +53,7 @@ export default function Partners() {
         </div>
       </section>
       <section className="partners-section investor-section">
-        <div className="container">
+        <div className="container-lg">
           <div className="row">
             <div className="col-12">
               <div className="section-header sec-header">

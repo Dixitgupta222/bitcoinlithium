@@ -71,3 +71,48 @@ export const getPartnersData = () => ({
     },
   ],
 });
+
+export const getUsingData = () => [
+  {
+    name: "Finance",
+    image: "/img/finance.svg",
+    description:
+      "Security enhancement and tasks automatization, including fraud detection, credit analysis, and algorithmic trading, with AI for maximum accuracy and speed.",
+  },
+  {
+    name: "Healthcare",
+    image: "/img/healthcare.svg",
+    description:
+      "Secure and confidential medical data exchange, analyzed by AI to speed up diagnoses and improve patient care quality.",
+  },
+  {
+    name: "Supply-chain management",
+    image: "/img/supply.svg",
+    description:
+      "Real-time monitoring and forecasting of items movement, logistics processes optimization, and cost reduction through advanced data analytics.",
+  },
+  {
+    name: "Internet of Things (IoT)",
+    image: "/img/internet.svg",
+    description:
+      "Efficient management of an enormous number of IoT devices with fast and secure data transfer through a decentralized infrastructure.",
+  },
+  {
+    name: "Content monetization",
+    image: "/img/content.svg",
+    description:
+      "Simple and secure sales of AI-generated content, featuring full transaction transparency and copyright protection.",
+  },
+  {
+    name: "Decentralized AI services",
+    image: "/img/ai.svg",
+    description:
+      "A platform for training and deploying AI models with monetization potential, free from centralized brokers.",
+  },
+  {
+    name: "Government Administration",
+    image: "/img/government.svg",
+    description:
+      "Implementation of transparent government processes, such as e-voting and buying management, using smart contracts to increase trust and efficiency.",
+  },
+];

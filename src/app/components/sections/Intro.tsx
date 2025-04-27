@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Intro() {
   return (
     <section className="intro-section">
-      <div className="container">
+      <div className="container-lg">
         <div className="row align-items-center">
           <div className="col-lg-12 text-center">
             <div className="intro-presale_live">
