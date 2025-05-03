@@ -2,16 +2,20 @@
 
 import React from 'react'
 import Link from 'next/link'
-
+import Image from 'next/image';
+import { BsTwitterX } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 export default function Footer() {
   return (
-    <footer className="bg-dark text-white py-5">
+    <footer className="text-white py-5">
       <div className="container">
         <div className="row">
           <div className="col-md-3 mb-4 mb-md-0">
-            <h5 className="mb-3">Nexchain</h5>
+            <div className="footer-logo">
+              <Image src="/img/footer-logo.svg" width={100} height={50} />
+            </div>
             <p className="text-muted small">
-              The world's first AI-powered blockchain, bringing together advanced technology and decentralization security.
+            Nexchain is an L1 blockchain protocol that leverages artificial intelligence (AI) to optimize scalability, security, and interoperability.
             </p>
           </div>
           <div className="col-md-3 mb-4 mb-md-0">
@@ -51,12 +55,12 @@ export default function Footer() {
           </div>
           <div className="col-md-3">
             <h5 className="mb-3">Stay Connected</h5>
-            <div className="d-flex gap-3">
+            <div className="d-flex gap-3 social-links">
               <a href="#" className="text-muted text-decoration-none">
-                Twitter
+              <BsTwitterX />
               </a>
               <a href="#" className="text-muted text-decoration-none">
-                GitHub
+              <BsLinkedin />
               </a>
             </div>
           </div>

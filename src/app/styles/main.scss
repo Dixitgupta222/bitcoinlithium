@@ -9,6 +9,9 @@
 @import "sections/intro";
 @import "sections/partners";
 @import "sections/about";
+@import "sections/utility";
+@import "sections/token";
+
 // Custom styles
 body {
   font-family: $font-family-base;
@@ -40,6 +43,16 @@ section {
     background: linear-gradient(90deg, #1a1a1a 0%, #333 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  > p {
+    max-width: 40%;
+    margin: auto;
+    font-size: 18px;
+  }
+  @media (max-width: 991px) {
+    > p {
+      max-width: 100%;
+    }
   }
 }
 // Header styles
@@ -104,7 +117,7 @@ section {
 
 // Footer styles
 footer {
-  background-color: $background-dark;
+  background-color: #000;
   color: $light;
   padding: 4rem 0 2rem;
 
@@ -131,6 +144,15 @@ footer {
   hr {
     border-color: rgba($light, 0.1);
     margin: 2rem 0;
+  }
+  .social-links{
+    a{
+      &:hover{
+       path{
+        fill: #fff;
+       }
+      }
+    }
   }
 }
 
